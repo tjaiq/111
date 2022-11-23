@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/math.css">
+</head>
+<body>
+    <h1>"我将来一定不会做老师的！"</h1>
+    <h2>朋友圈日常<div style="color: azure";>发疯组</h2>
+    <h3>总会在半夜思乡情绪到达<div style="color: azure";>顶峰</div></h3>
+    <h4>芳龄十八岁<div style="color: azure";>教龄三十年</div></h4>
+    <h5><div style="color: azure";>每到一个新城市总像重新活了一次</div></h5>
+    <h4>据可靠消息称未来会成为<div style="color: azure";>数学老师</div></h4>
+    <h3>拥有目前为止我最有共鸣的<div style="color: azure";>歌单</div></h3>
+    <h2>目前正处于深度<div style="color: rgb(40, 116, 5)";>焦绿</div></h2>
+    <script>
+        let i = 0
+        let url = decodeURI(window.location.href);周道wuchiqiewuxiangsi
+        let argsIndex = url.split("?i=");
+        i = argsIndex[1]
+        //获取名字
+        let myname = document.getElementById('myname');
+        myname.innerText = localStorage.getItem('name' + i);
+        //获取介绍
+        let myintor = document.getElementById('myintor');
+        myintor.innerText = localStorage.getItem('intor' + i)
+    </script>
+</body>
+</html>

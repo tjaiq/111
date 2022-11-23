@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(237, 238, 181);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    font-size: xx-large;
+    font-weight: 500;
+    top:30px ; 
+
+}
+.box1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:inherit;
+}
+#neon-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background:rgb(237, 238, 181);
+} 
+.btn{
+    border:1px solid;
+    background-color: transparent;
+    text-transform: uppercase; 
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 300;
+    border-radius: 10px;
+
+}
+.one{
+    color: #2d33f0;
+}
+.two{
+    color: #f038ff;
+}
+.three{
+    color: #205a03
+}
+.btn:hover{
+    color:aliceblue;
+    border:0;
+}
+.one:hover{
+    background-color: #1a30f1;
+    -webkit-box-shadow: 10px 10px 99px 6px rgba(6, 30, 98,1);
+    -moz-box-shadow: 10px 10px 99px 6px rgba(6,30,98,1);
+    box-shadow: 10px 10px 99px 6px rgba(6,30,98,1);
+
+}
+.two:hover{
+  background-color:#d98ae0; 
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
+  box-shadow: 10px 10px 99px 6px rgba(240,56,255,1);
+}
+.three:hover{
+    background-color: #205a03;
+    -webkit-box-shadow: 10px 10px 99px 6px rgba(12, 87, 81，1);
+    -moz-box-shadow: 10px 10px 99px 6px rgba(12,87,81,1);
+    box-shadow:10px 10px 99px 6px rgba(12,87,81,1);
+}

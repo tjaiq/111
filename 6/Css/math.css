@@ -1,0 +1,10 @@
+.h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    font-style: inherit;
+    color: rgb(9, 2, 2)
+}
+body{
+    background-color: rgb(238, 195, 190);
+}

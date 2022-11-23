@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/active.css">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="box1"> 
+           
+        <input type="text" name="" id="myname" placeholder="请输入名字">
+        <input type="text" name="" id="myintor" placeholder="请输入介绍">
+        </div>
+        <div class="box2" >
+        <input type="button" name="" id="" value="提交" onclick="setinfo()">
+        </div>
+        <div class="box3">
+        <a href="1.html">返回</a>
+        </div>
+       
+
+       
+    </body>
+    <script>
+        let myname = document.getElementById('myname')
+        let myintor = document.getElementById('myintor')
+        function setinfo() {
+            let i;
+            for (i = 0; i >= 0;) {
+                let ifname = localStorage.getItem('name' + i)
+                if (localStorage.getItem('name' + i) != null) {
+                    //自定义代码
+                    i++
+                    console.log('key 存在' + 'key的值为' + ifname)
+                    continue;
+                } else {
+                    console.log('key 不存在')
+                    localStorage.setItem('name' + i, myname.value)
+                    localStorage.setItem('intor' + i, myintor.value)
+                    break;
+                }
+            }
+        }    
+   
+    </script>
+
+</html>

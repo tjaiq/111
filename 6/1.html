@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSs/style1.css">
+    <title>Document</title>
+
+</head>
+<body>
+    
+        <h3>欢迎来到我的页面</h3>
+        <h5>下面是我和我的舍友的一些介绍:</h5>
+        <p>
+            <a href="./myinfo.html?i=0" id="myname">name</a>
+            <a href="./myinfo.html?i=1" id="nameTwo">name</a>
+            <a href="./myinfo.html?i=2" id="nameThree">name</a>
+        </p>
+   <div class="box1">
+    <a href="./active.html ">跳转</a>
+    <a href="./start.html  ">返回首页  </a>
+   </div>
+
+</body>
+<script>
+        let myname = document.getElementById('myname');
+        myname.innerText = localStorage.getItem('name0')
+        let nameTwo = document.getElementById('nameTwo');
+        nameTwo.innerText = localStorage.getItem('name1')
+        let nameThree = document.getElementById('nameThree');
+        nameThree.innerText = localStorage.getItem('name2')
+    </script>
+</html>

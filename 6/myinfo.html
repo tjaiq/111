@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>大家好</h1>
+    <h2>My name is <span id="myname"></span></h2>
+    <p id="myintor">我来自河南省，目前是沈阳理工大学的一名同学，喜欢敲代码，打游戏， 看小说，希望进入琴理工作室找到与我志同道合的道友
+    </p>
+    <div class="box1">
+        <a href="./1.html">返回</a>
+    </div>
+</body>
+
+<script>
+    let i = 0
+    let url = decodeURI(window.location.href);
+    let argsIndex = url.split("?i=");
+    i = argsIndex[1]
+    //获取名字
+    let myname = document.getElementById('myname');
+    myname.innerText = localStorage.getItem('name' + i);
+    //获取介绍
+    let myintor = document.getElementById('myintor');
+    myintor.innerText = localStorage.getItem('intor' + i)
+</script>
+</html>
